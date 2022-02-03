@@ -1,8 +1,8 @@
-# Vicksek Model Simulation Using Python [MESA](https://mesa.readthedocs.io/en/latest/)
+# [Vicksek Model](https://arxiv.org/abs/cond-mat/0611743) Simulation Using Python [MESA](https://mesa.readthedocs.io/en/latest/)
 
 ## Setup:
 1. Download the repo. open terminal
-2. Create vurtual environment
+2. Create virtual environment
     - `$ python3 -m venv /path/to/vicsek_model`
 3. Activate the virtual environment
     - `$ source /path/to/vicsek_model/bin/activate`
