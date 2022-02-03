@@ -76,7 +76,7 @@ class PhaseModel(Model):
             # formula random*(High-Low)+ Low
             x = np.random.random() * (grid_x) - grid_x / 2
             y = np.random.random() * (grid_y) - grid_y / 2
-            position = np.sqrt(np.power(x, 2) + np.power(y, 2))  # the x in paper is nothing but polar coordinate
+            position = np.sqrt(np.power(x, 2) + np.power(y, 2)) 
             theta = np.arctan2(y, x)
             a = PhaseAgent(i, self, Velocity, position, theta,False)
             self.grid.place_agent(a, (x, y))
@@ -85,7 +85,7 @@ class PhaseModel(Model):
         if createLeader:
             x = np.random.random() * (grid_x) - grid_x / 2
             y = np.random.random() * (grid_y) - grid_y / 2
-            position = np.sqrt(np.power(x, 2) + np.power(y, 2))  # the x in paper is nothing but polar coordinate
+            position = np.sqrt(np.power(x, 2) + np.power(y, 2))
             theta = np.arctan2(y, x)
             leader = PhaseAgent(i, self, Velocity, position, theta, True)
             self.grid.place_agent(leader, (x, y))
